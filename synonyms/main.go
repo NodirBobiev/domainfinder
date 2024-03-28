@@ -9,9 +9,9 @@ import (
 )
 
 func main() {
-	// apiKey := os.Getenv("BHT_APIKEY")
-	// thesaurus := &thesaurus.BigHuge{APIKey: apiKey}
-	thesaurus := &thesaurus.ChatSynonyms{}
+	apiKey := os.Getenv("NINJA_API_KEY")
+	thesaurus := &thesaurus.Ninja{APIKey: apiKey}
+	// thesaurus := &thesaurus.ChatSynonyms{}
 	s := bufio.NewScanner(os.Stdin)
 	for s.Scan() {
 		word := s.Text()

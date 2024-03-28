@@ -5,7 +5,7 @@ type Thesaurus interface {
 }
 
 // ChatSynonyms returns synonyms for the word "chat". This struct is only for
-// testing. Because Big Huge Labs api, sometimes, is not avaible.
+// testing.
 type ChatSynonyms struct {
 }
 
